@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - M.Gherell Santoso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            yellow: '#e6cf80',
+                            brown: '#4e4537',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f3f4f6; /* Light gray background for contrast */
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        /* Custom spacing for the dot timeline effect */
+        .timeline-dot {
+            font-size: 14px;
+            margin-top: 6px;
+        }
+
+        /* Responsive flex order to bring header to top on mobile */
+        @media (max-width: 767px) {
+            .mobile-reverse {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            .mobile-header {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body class="py-10 px-4 md:px-10">
+
+    <div class="max-w-[1000px] mx-auto bg-white shadow-2xl flex flex-col md:flex-row overflow-hidden relative">
+        
+        <!-- ================= LEFT COLUMN (Yellow) ================= -->
+        <div class="w-full md:w-[35%] bg-brand-yellow p-8 md:pt-16 flex flex-col gap-10 text-gray-900 z-10">
+            
+            <!-- Profile Picture -->
+            <div class="flex justify-center md:mt-2">
+                <img src="IMG.jpg" class="w-48 h-48 rounded-full object-cover border-4 border-white/40 shadow-lg">
+            </div>
+
+            <!-- About Me -->
+            <div>
+                <h2 class="text-2xl font-bold flex items-center gap-3 mb-4">
+                    <i class="fas fa-user"></i> About Me
+                </h2>
+                <p class="text-sm text-justify leading-relaxed font-medium">
+                    "Mahasiswa Ilmu Komputer yang memadukan kedisiplinan analitis dengan kreativitas di bidang seni dan hiburan. Berpengalaman sebagai music producer, penulis lagu, dan performer di berbagai festival ternama. Terbiasa bekerja secara mandiri maupun berkolaborasi untuk menghasilkan karya musik orisinal, serta memiliki pemahaman tentang perilisan katalog musik digital."
+                </p>
+            </div>
+
+            <!-- Skills -->
+            <div>
+                <h2 class="text-2xl font-bold flex items-center gap-3 mb-4">
+                    <i class="fas fa-cog"></i> Skills
+                </h2>
+                <ul class="list-disc pl-6 space-y-3 text-sm font-medium">
+                    <li>Rapping</li>
+                    <li>Singing</li>
+                    <li>Dancing</li>
+                    <li>Performing</li>
+                    <li>Songwriting</li>
+                </ul>
+            </div>
+
+            <!-- Language -->
+            <div class="pb-6">
+                <h2 class="text-2xl font-bold flex items-center gap-3 mb-4">
+                    <i class="fas fa-language"></i> Language
+                </h2>
+                <ul class="list-disc pl-6 space-y-3 text-sm font-medium">
+                    <li>English</li>
+                    <li>Indonesian</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <!-- ================= RIGHT COLUMN (White/Brown) ================= -->
+        <div class="w-full md:w-[65%] flex flex-col">
+            
+            <!-- Header Section (Dark Brown) -->
+            <div class="bg-brand-brown p-10 md:p-14 text-white shadow-md relative z-20 mobile-header">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-[0.15em] uppercase leading-tight mb-2">
+                    M.Gherell<br>Santoso
+                </h1>
+                <p class="text-xl md:text-2xl font-light tracking-wide mt-3">
+                    Mahasiswa
+                </p>
+            </div>
+
+            <!-- Main Content Section (White) -->
+            <div class="bg-white p-10 md:p-14 flex flex-col gap-10">
+                
+                <!-- Education -->
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-4 mb-6">
+                        <i class="fas fa-graduation-cap text-3xl"></i> Education
+                    </h2>
+                    <div class="flex items-start gap-4 ml-2">
+                        <i class="fas fa-circle text-gray-700 timeline-dot"></i>
+                        <div>
+                            <h3 class="text-xl font-extrabold">(2025 - N/A)</h3>
+                            <h4 class="text-lg font-bold uppercase mt-1">TELKOM UNIVERSITY</h4>
+                            <p class="text-gray-600 font-medium">Sistem Informasi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-4 mb-6">
+                        <i class="fas fa-briefcase text-3xl"></i> Experience
+                    </h2>
+                    <div class="flex items-start gap-4 ml-2">
+                        <i class="fas fa-circle text-gray-700 timeline-dot"></i>
+                        <div>
+                            <h3 class="text-xl font-extrabold">(2026)</h3>
+                            <h4 class="text-lg font-bold uppercase mt-1">M7 WORLD CHAMPIONSHIP CARNIVAL</h4>
+                            <p class="text-gray-700 font-semibold mb-2">Performer</p>
+                            <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                                <li>Performing as a talent at MLBB M7 Carnival</li>
+                                <li>Bring an ordinary concept where we're performing as a team and medley mixes.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Music Releases -->
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-4 mb-6">
+                        <i class="fas fa-music text-3xl"></i> Music Releases
+                    </h2>
+                    <div class="ml-10">
+                        <h3 class="text-xl font-extrabold uppercase">TUWAGAPAT</h3>
+                        <p class="text-gray-700 font-semibold mb-2">Karzael & RD Prmzd</p>
+                        <ul class="list-disc pl-5 space-y-1 text-gray-600">
+                            <li>Hipdut song by Karzael & Rd prmzd Single Release on 2025</li>
+                            <li>Tuwagapat has surpassed 300.000 Streams on Spotify</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-4 mb-6">
+                        <i class="fas fa-id-badge text-3xl"></i> Contact
+                    </h2>
+                    <div class="ml-10 space-y-4">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-phone text-xl w-6 text-center"></i>
+                            <span class="font-medium">+62 851-2364-5030</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-envelope text-xl w-6 text-center"></i>
+                            <span class="font-medium">eajispark@gmail.com</span>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-xl w-6 text-center mt-1"></i>
+                            <span class="font-medium">Avani Terra Residence,<br>Kab.Bogor.</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
